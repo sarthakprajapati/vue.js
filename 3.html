@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- VUE.js File -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <div id="vue-app">
+        <!-- Data Binding to href-->
+        Data Binding to href tag : 'v-bind'<a v-bind:href="website">ABC</a><br>
+        <!-- Short hand Data Binding to href -->
+        Data Binding to href tag : ':'<a :href="website">Shorthand</a><br>
+        <!-- Data Binding to input tag -->
+        Data Binding to Input tag : 'v-bind'<input type="text" v-bind:value="name"><br>
+        <!-- Short hand Data Binding to input -->
+        Data Binding to Input tag : ':'<input type="text" :value="name">
+        <!-- Html Binding -->
+        <p v-html="websiteTag"></p>
+    </div>
+    <script src="app3.js"></script>
+</body>
+</html>
