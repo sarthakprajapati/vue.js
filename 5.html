@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Modifiers</title>
+
+    <!-- VUE.js File -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        #canvas{
+            height: 500px;
+            width: 500px;
+            border : 3px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="vue-app">
+        <div>
+            v-on:click.once <button v-on:click.once="add(1)">Add 1</button><br>
+            @click <button @click="subtract(1)">Subtract 1</button><br>
+            v-on:dblclick <button v-on:dblclick="add(10)">Add 10</button><br>
+            @dblclick <button @dblclick="subtract(10)">Subtract 10</button><br>
+            <h1>{{age}}</h1>
+        </div><br>
+        v-on:mousemove
+        <div id="canvas" v-on:mousemove="updateXY">
+            {{x}},{{y}}
+        </div>
+        <a v-on:click.prevent="visit" href="http://www.google.com">v-on:click.prevent</a>
+    </div>
+    <script src="app5.js"></script>
+</body>
+</html>
