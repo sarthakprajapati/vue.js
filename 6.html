@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyboard Events</title>
+
+    <!-- VUE.js File -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        #canvas{
+            height: 500px;
+            width: 500px;
+            border : 3px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="vue-app">
+        <div>
+            <input type="text" v-on:keyup.enter="add(1)">
+            <input type="text" v-on:keyup.13="add(13)">
+            <input type="text" v-on:keyup.space="add(10)">
+            <h1>{{age}}</h1>
+        </div><br>
+        v-on:mousemove
+        <div id="canvas" v-on:mousemove="updateXY">
+            {{x}},{{y}}
+        </div>
+        <a v-on:click.prevent="visit" href="http://www.google.com">v-on:click.prevent</a>
+    </div>
+    <script src="app6.js"></script>
+</body>
+</html>

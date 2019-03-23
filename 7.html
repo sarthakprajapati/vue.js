@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Two Way Binding in Vue.js</title>
+
+    <!-- VUE.js File -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        #canvas{
+            height: 500px;
+            width: 500px;
+            border : 3px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="vue-app">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" v-model="name">
+            <h1>{{name}}</h1><br>
+            <label for="name">Age</label>
+            <input type="text" v-model="age">
+            <h1>{{age}}</h1>
+        </div><br>
+    </div>
+    <script src="app7.js"></script>
+</body>
+</html>
