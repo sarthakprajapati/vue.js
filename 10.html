@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loop</title>
+
+    <!-- VUE.js File -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>v-for</h1>
+        <div v-for="department in departments">{{department}}</div>
+        <template v-for="student in students">
+            Name : {{student.name}} - Age: {{student.age}} <br>
+        </template>
+        <template v-for="student in students">
+            <div v-for="(val,key) in student">
+                {{key}} - {{val}}
+            </div>
+        </template>
+    </div>
+    <script src="app10.js"></script>
+</body>
+</html>
